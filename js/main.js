@@ -42,4 +42,6 @@ for (row = 0; row < 8; row++){
         gridRows[row].appendChild(gridBoxes[row*box]);
     }
 
+
+esGrid.appendChild(gridColumn);
 }
