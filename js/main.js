@@ -35,6 +35,9 @@ for (row = 0; row < 8; row++){
         //add the box class to each of 64 boxes  
         gridBoxes[row*box].classList.add("box");
 
+        //add eventListener to each box, add "red" class to change color on mouseover
+        gridBoxes[row*box].addEventListener("mouseover", function(){this.classList.add("red")});
+
         //append 8 boxes to each of the 8 rows
         gridRows[row].appendChild(gridBoxes[row*box]);
     }
