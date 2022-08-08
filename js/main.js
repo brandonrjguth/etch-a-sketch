@@ -24,5 +24,19 @@ for (row = 0; row < 8; row++){
 
     //append each row to the grid column
     gridColumn.appendChild(gridRows[row]);
-    
+
+
+    //For each of the 8 times a row is created and added to the array, create 8 boxes
+    for(box = 0; box < 8; box++){
+
+        //create an array of 8 boxes for each of the 8 rows
+        gridBoxes[row*box] = document.createElement("div");
+
+        //add the box class to each of 64 boxes  
+        gridBoxes[row*box].classList.add("box");
+
+        //append 8 boxes to each of the 8 rows
+        gridRows[row].appendChild(gridBoxes[row*box]);
+    }
+
 }
