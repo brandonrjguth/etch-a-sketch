@@ -18,14 +18,10 @@ let changePixels =  document.querySelector("#changePixels");
 changePixels.addEventListener("click", () => {
 
     gridPixels = prompt("Enter a grid size");
-    esGrid.innerHTML = "";
-    gridColumn.innerHTML = "";
-    gridRows = [];
-    gridBoxes = [];
+    removeGrid();
     createGrid(gridPixels);
   
 })
-
 
 //function for creating grid
 let createGrid = (gridPixels) => {
@@ -63,6 +59,14 @@ let createGrid = (gridPixels) => {
     esGrid.appendChild(gridColumn);
     }
 
+}
+
+//function for removing grid
+let removeGrid = () => {
+    esGrid.innerHTML = "";
+    gridColumn.innerHTML = "";
+    gridRows = [];
+    gridBoxes = [];
 }
 
 createGrid(gridPixels);
