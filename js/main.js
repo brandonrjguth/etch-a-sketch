@@ -1,10 +1,8 @@
 //Assign value to grid div
 let esGrid = document.querySelector(".esGrid");
 
-//Create column div
+//Create column div and add column class to it
 let gridColumn = document.createElement("div");
-
-//add column class to column
 gridColumn.classList.add("column");
 
 
@@ -14,7 +12,8 @@ let gridBoxes = [];
 
 
 
-let createRow = () => {
+//function for creating grid
+let createGrid = () => {
 
     //Run a loop 8 times to create new row elements in an array called gridRow
     for (row = 0; row < 8; row++){
@@ -51,5 +50,5 @@ let createRow = () => {
 
 }
 
-createRow();
+createGrid();
 
