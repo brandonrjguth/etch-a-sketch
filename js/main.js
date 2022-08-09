@@ -9,14 +9,18 @@ gridColumn.classList.add("column");
 //declare empty array of rows and boxes to add divs and styles to
 let gridRows = [];
 let gridBoxes = [];
+let gridPixels = 8;
+
+
+//Link variable to the button for changing the amount of pixels
 let changePixels =  document.querySelector("#changePixels");
 
 
 //function for creating grid
-let createGrid = () => {
+let createGrid = (gridPixels) => {
 
     //Run a loop 8 times to create new row elements in an array called gridRow
-    for (row = 0; row < 8; row++){
+    for (row = 0; row < gridPixels; row++){
 
         //Add each row to the gridRows array
         gridRows[row] = document.createElement("div"); 
@@ -29,7 +33,7 @@ let createGrid = () => {
 
 
         //For each of the 8 times a row is created and added to the array, create 8 boxes
-        for(box = 0; box < 8; box++){
+        for(box = 0; box < gridPixels; box++){
 
             //create an array of 8 boxes for each of the 8 rows
             gridBoxes[row*box] = document.createElement("div");
@@ -50,5 +54,5 @@ let createGrid = () => {
 
 }
 
-createGrid();
+createGrid(gridPixels);
 
