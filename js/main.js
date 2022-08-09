@@ -16,6 +16,8 @@ let gridPixels = 8;
 let changePixels =  document.querySelector("#changePixels");
 
 
+
+
 //function for creating grid
 let createGrid = (gridPixels) => {
 
