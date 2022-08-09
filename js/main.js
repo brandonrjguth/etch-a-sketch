@@ -9,7 +9,7 @@ gridColumn.classList.add("column");
 //declare empty array of rows and boxes to add divs and styles to
 let gridRows = [];
 let gridBoxes = [];
-
+let changePixels =  document.querySelector("#changePixels");
 
 
 //function for creating grid
