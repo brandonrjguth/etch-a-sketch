@@ -15,7 +15,16 @@ let gridPixels = 8;
 //Link variable to the button for changing the amount of pixels
 let changePixels =  document.querySelector("#changePixels");
 
+changePixels.addEventListener("click", () => {
 
+    gridPixels = prompt("Enter a grid size");
+    esGrid.innerHTML = "";
+    gridColumn.innerHTML = "";
+    gridRows = [];
+    gridBoxes = [];
+    createGrid(gridPixels);
+  
+})
 
 
 //function for creating grid
