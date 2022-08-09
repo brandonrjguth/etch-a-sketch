@@ -1,21 +1,23 @@
 .esGrid{
     display:flex;
+    height:200px;
+    width:200px;
+    border: 1px solid black;
 }
 
 .column{
     display:flex;
     flex-direction: column;
-    border: 1px solid black;
+    flex-grow: 1;
 }
 
 .row{
-    display:flex
+    display:flex;
+    flex-grow: 1;
 }
 
 .box{
-    height:20px;
-    width:20px;
-    border:1px black;
+    flex-grow: 1;
 }
 
 .red{
